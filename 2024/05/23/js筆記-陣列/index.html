@@ -6,15 +6,15 @@
   
   <title>js筆記 | Hexo測試</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="##陣列寫法 12345let colors &#x3D; [&quot;red&quot;, &quot;blue&quot;, &quot;black&quot;];let ary &#x3D; [&quot;blue&quot;, true, 5];let books &#x3D; [5, 30, 400, 100]; ###讀取陣列資料，了解陣列長度 1console.log(colors[0]); ###陣列是從0開">
+  <meta name="description" content="陣列寫法12345let colors &#x3D; [&quot;red&quot;, &quot;blue&quot;, &quot;black&quot;];let ary &#x3D; [&quot;blue&quot;, true, 5];let books &#x3D; [5, 30, 400, 100]; 讀取陣列資料，了解陣列長度1console.log(colors[0]); 陣列是從0開始，第一個&amp;#x3D">
 <meta property="og:type" content="article">
 <meta property="og:title" content="js筆記">
 <meta property="og:url" content="https://shen-w-w.github.io/hexo-/2024/05/23/js%E7%AD%86%E8%A8%98-%E9%99%A3%E5%88%97/index.html">
 <meta property="og:site_name" content="Hexo測試">
-<meta property="og:description" content="##陣列寫法 12345let colors &#x3D; [&quot;red&quot;, &quot;blue&quot;, &quot;black&quot;];let ary &#x3D; [&quot;blue&quot;, true, 5];let books &#x3D; [5, 30, 400, 100]; ###讀取陣列資料，了解陣列長度 1console.log(colors[0]); ###陣列是從0開">
+<meta property="og:description" content="陣列寫法12345let colors &#x3D; [&quot;red&quot;, &quot;blue&quot;, &quot;black&quot;];let ary &#x3D; [&quot;blue&quot;, true, 5];let books &#x3D; [5, 30, 400, 100]; 讀取陣列資料，了解陣列長度1console.log(colors[0]); 陣列是從0開始，第一個&amp;#x3D">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2024-05-23T07:32:22.000Z">
-<meta property="article:modified_time" content="2024-05-23T08:57:17.942Z">
+<meta property="article:modified_time" content="2024-05-23T09:03:58.334Z">
 <meta property="article:author" content="Shen">
 <meta property="article:tag" content="js">
 <meta property="article:tag" content="陣列">
@@ -103,31 +103,22 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>##陣列寫法</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">let colors = [&quot;red&quot;, &quot;blue&quot;, &quot;black&quot;];</span><br><span class="line"></span><br><span class="line">let ary = [&quot;blue&quot;, true, 5];</span><br><span class="line"></span><br><span class="line">let books = [5, 30, 400, 100];</span><br></pre></td></tr></table></figure>
-<p>###讀取陣列資料，了解陣列長度</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">console.log(colors[0]);</span><br></pre></td></tr></table></figure>
-<p>###陣列是從0開始，第一個&#x3D;0</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">let myColor = colors[0];</span><br></pre></td></tr></table></figure>
-<p>###讀取長度.length</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">console.log(colors.length);</span><br></pre></td></tr></table></figure>
-<p>###寫入，中間沒寫會變成空資料，依然存在</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">let color = [];</span><br><span class="line">color[0] = &quot;blue&quot;;</span><br><span class="line">color[3] = &quot;red&quot;</span><br><span class="line">console.log(color);</span><br></pre></td></tr></table></figure>
-<p>###在陣列最後塞入資料 .push</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">color.push(&#x27;pink&#x27;);</span><br><span class="line">console.log(color);</span><br></pre></td></tr></table></figure>
+        <h2 id="陣列寫法"><a href="#陣列寫法" class="headerlink" title="陣列寫法"></a>陣列寫法</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">let colors = [&quot;red&quot;, &quot;blue&quot;, &quot;black&quot;];</span><br><span class="line"></span><br><span class="line">let ary = [&quot;blue&quot;, true, 5];</span><br><span class="line"></span><br><span class="line">let books = [5, 30, 400, 100];</span><br></pre></td></tr></table></figure>
+<h3 id="讀取陣列資料，了解陣列長度"><a href="#讀取陣列資料，了解陣列長度" class="headerlink" title="讀取陣列資料，了解陣列長度"></a>讀取陣列資料，了解陣列長度</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">console.log(colors[0]);</span><br></pre></td></tr></table></figure>
+<h3 id="陣列是從0開始，第一個-0"><a href="#陣列是從0開始，第一個-0" class="headerlink" title="陣列是從0開始，第一個&#x3D;0"></a>陣列是從0開始，第一個&#x3D;0</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">let myColor = colors[0];</span><br></pre></td></tr></table></figure>
+<h3 id="讀取長度-length"><a href="#讀取長度-length" class="headerlink" title="讀取長度.length"></a>讀取長度.length</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">console.log(colors.length);</span><br></pre></td></tr></table></figure>
+<h3 id="寫入，中間沒寫會變成空資料，依然存在"><a href="#寫入，中間沒寫會變成空資料，依然存在" class="headerlink" title="寫入，中間沒寫會變成空資料，依然存在"></a>寫入，中間沒寫會變成空資料，依然存在</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">let color = [];</span><br><span class="line">color[0] = &quot;blue&quot;;</span><br><span class="line">color[3] = &quot;red&quot;</span><br><span class="line">console.log(color);</span><br></pre></td></tr></table></figure>
+<h3 id="在陣列最後塞入資料-push"><a href="#在陣列最後塞入資料-push" class="headerlink" title="在陣列最後塞入資料 .push"></a>在陣列最後塞入資料 .push</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">color.push(&#x27;pink&#x27;);</span><br><span class="line">console.log(color);</span><br></pre></td></tr></table></figure>
 <p>###在陣列最前面塞入資料 .unshift</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">color.unshift(&quot;black&quot;);</span><br></pre></td></tr></table></figure>
 
-<p>###刪除陣列資料<br>###刪除最後一個 .pop</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">color.pop();</span><br></pre></td></tr></table></figure>
-<p>###刪除第一個 .shift</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">color.shift();</span><br></pre></td></tr></table></figure>
-<p>###刪除指定資料 (0,1) 0為起始位置, 1為幾筆資料，目前為從最前面刪除一筆</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">color.splice(1, 1);</span><br></pre></td></tr></table></figure>
+<h3 id="刪除陣列資料"><a href="#刪除陣列資料" class="headerlink" title="刪除陣列資料"></a>刪除陣列資料</h3><h3 id="刪除最後一個-pop"><a href="#刪除最後一個-pop" class="headerlink" title="刪除最後一個 .pop"></a>刪除最後一個 .pop</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">color.pop();</span><br></pre></td></tr></table></figure>
+<h3 id="刪除第一個-shift"><a href="#刪除第一個-shift" class="headerlink" title="刪除第一個 .shift"></a>刪除第一個 .shift</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">color.shift();</span><br></pre></td></tr></table></figure>
+<h3 id="刪除指定資料-0-1-0為起始位置-1為幾筆資料，目前為從最前面刪除一筆"><a href="#刪除指定資料-0-1-0為起始位置-1為幾筆資料，目前為從最前面刪除一筆" class="headerlink" title="刪除指定資料 (0,1) 0為起始位置, 1為幾筆資料，目前為從最前面刪除一筆"></a>刪除指定資料 (0,1) 0為起始位置, 1為幾筆資料，目前為從最前面刪除一筆</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">color.splice(1, 1);</span><br></pre></td></tr></table></figure>
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://shen-w-w.github.io/hexo-/2024/05/23/js%E7%AD%86%E8%A8%98-%E9%99%A3%E5%88%97/" data-id="clwj0ya0r0007ck6g0ewlambg" data-title="js筆記" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="https://shen-w-w.github.io/hexo-/2024/05/23/js%E7%AD%86%E8%A8%98-%E9%99%A3%E5%88%97/" data-id="clwj111lo00028c6gfjfxffrw" data-title="js筆記" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
